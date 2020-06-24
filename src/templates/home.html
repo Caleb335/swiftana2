@@ -7,11 +7,21 @@
       type="image/x-icon"
       href="https://user-images.githubusercontent.com/20112458/49326597-773b7280-f57a-11e8-853d-20ed61d18b0d.png"
     />
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-      body {
-        font-family: monospace;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Comic Neue', cursive;
       }
+
+      body {
+        background: ghostwhite;
+      }
+
       h1 {
         background-color: yellow;
         display: inline-block;
@@ -19,43 +29,45 @@
         margin: 0;
         padding: 14px;
       }
+
       h3 {
         color: black;
         font-size: 20px;
         margin-top: 3px;
         text-align: center;
       }
+
       #chatbox {
         margin-left: auto;
         margin-right: auto;
         width: 40%;
         margin-top: 60px;
       }
+
       #userInput {
         margin-left: auto;
         margin-right: auto;
         width: 40%;
         margin-top: 60px;
       }
-      #textInput {
-        width: 90%;
-        border: none;
-        border-bottom: 3px solid black;
-        font-family: monospace;
-        font-size: 17px;
-      }
+      
       .userText {
-        color: white;
-        font-family: monospace;
-        font-size: 17px;
-        text-align: right;
-        line-height: 30px;
-      }
-      .userText span {
         background-color: #808080;
         padding: 10px;
-        border-radius: 2px;
+        border-radius: 10px;
+        margin-top: 10%;
+        width: 84%;
+        height: 100%;
+        text-align: left;
+        color: #fff;
+        font-size: 22px;
+        margin-left: 20%;
       }
+
+      .userText p {
+        padding: .2em .2em;
+      }
+
       .botText {
         color: white;
         font-family: monospace;
@@ -63,27 +75,49 @@
         text-align: left;
         line-height: 30px;
       }
+
       .botText span {
         background-color: #4169e1;
         padding: 10px;
         border-radius: 2px;
+        margin-top: 4%;
+        width: 100%;
       }
+
       #tidbit {
         position: absolute;
         bottom: 0;
         right: 0;
         width: 300px;
       }
+
       .boxed {
         margin-left: auto;
         margin-right: auto;
         width: 78%;
         margin-top: 60px;
         border: 1px solid green;
+        padding-bottom: 40px;
       }
+
       .box {
         border: 2px solid black;
       }
+
+      /* uer input field */
+      .form__control {
+        height: 50px;
+        width: 500px;
+        padding: .3em 1em;
+        font-size: 17px;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      .form__control::placeholder {
+        font-size: 17px;
+      }
+
     </style>
 </head>
   <body>
@@ -96,7 +130,6 @@
         />Your Personal Mental Health Assitant
       </h1>
     </center>
-<div class="box"></div>
     <div class="boxed">
       <div>
         <div id="chatbox">
@@ -109,15 +142,15 @@
             <span>Hi! I'm Swiftana, your mental health assistant</span>
           </p>
         </div>
-        <div id="userInput">
-          <input id="textInput" type="text" name="msg" placeholder="Type Your Message" />
+        <div id="userInput" class="user__message">
+          <input id="textInput" type="text" name="msg" placeholder="Type Your Message" class="form__control"/>
         </div>
       </div>
     </div>
     <script>
         function getBotResponse() {
           var rawText = $("#textInput").val();
-          var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+          var userHtml = '<div class="userText"><p>' + rawText + "</p></div>";
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
           document
@@ -136,6 +169,12 @@
             getBotResponse();
           }
         });
+
+        function displayTime() {
+          const time = new Date()
+
+          console.log(time)
+        }
 </script>
   </body>
 </html>
