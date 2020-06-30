@@ -5,13 +5,14 @@ Swift remedy to mental health problems
 
 ## About
 
-Mental health disorder or illness is an area of health challenges that has continued to widely impact the society in which we live. Various people from different parts of the world have had to deal with this issue for various unique or similar reasons. This condition has gone on to impact the lives of the affected people in various ways. There exists a number of scientific-backed solutions that have been proven to help to combat this situation. Most of these solutions involve interaction with health professionals. 
+Mental health disorder or illness is an area of health challenges that has continued to widely pain the societies in which we live despite the fact that treatments are available. Various people from different parts of the world have had to deal with this issue for various unique or similar reasons. This condition has gone on to impact the lives of the affected people in various ways. There exists a number of scientific-backed solutions that have been proven to help to combat this situation. Most of these solutions involve interaction with health professionals. 
 However, mental health problems are usually associated with a lot of stigma which may make it difficult for some people to come out and seek help. For this reason, it is crucial to provide another outlet or outlet through which patients can get useful information to help them to deal with the situation. Mental health disorder is common in our society more than you may ever think. 
 
 For instance in Nigeria, It is estimated by World Health Organization (WHO) that One in four Nigerians - some 50 million people - are suffering from some sort of mental illness. A country of 200 million with only 150 psychiatrists resulting to about 1 ratio 100,000 specialist to patients. WHO further estimates that fewer than 10 percent of mentally ill Nigerians have access to the care they need. This in turn has resulted to an overwhelming workload for the mental health specialist and many patients inability to get consultantation or treatment at all. Read more about mental health disorder down below this page.
 
-In view of the problem statement above, a viable solution would be to provide a platform through which patients can get useful information that can assist them to deal with mental health problems. The idea is to use machine learning on the various pieces of health data to try to diagnose patients for the various types of mental health problems that they have and propose solutions accordingly.
-The approach taken is to use an intelligent agent (chat bot) that patients can interact with and get the information that can assist their unique conditions. 
+In view of the problem statement above, a viable solution would be to provide a platform through which patients can get useful information that can assist them to deal with mental health problems. Majority of the available tech intervention use generic web pages as a means of providing useful information and connecting mental health patients to Therapists. This can be boring, overwhelming and hinder information access as mental health is always associated with lot of depression. Imaging already depressed people having to navigate through tons of web pages to get the help they need.
+ The idea proposed in this project uses machine learning on the various pieces of health data to try to diagnose patients for the various types of mental health problems that they have and propose solutions accordingly.
+The approach taken is to use an intelligent therapy agent (chat bot) that patients can interact with and get the information that can assist their unique conditions anywhere and get connected to human therapist nearby only when it is needed. 
 
 ## Usage
 
@@ -20,15 +21,16 @@ The approach taken is to use an intelligent agent (chat bot) that patients can i
 Swiftana is a mental health assistant bot aimed to help provide remedies to this ravaging mental health problems baffling our society. Swiftana work by given recommendations on possible cure or remedies base on the users health issues or sysmtoms. In a situation whereby the bot can not handle the user request or the user need to talk to a real human consultant, the bot connect them to nearby specialist or outpatient clinic in their location. The project is in line with the Sustainable Development Goal(SDG goal 3), problem statmeent 1 of the Andela build for SDG project. 
 
 ### Usage
-A user goes online and accesses the bot using a given URL after which they can start interacting with the system. The user can type in any relevant information and the bot will give a relevant response accordingly. The bot suggests possible remedies or recommendations that the user can make use of to assist them with their various conditions. After successful interaction, the bot suggests the nearest hospitals that offer mental health services that the patients can visit in order to seek further assistance. 
+A user goes online and accesses the bot using a given URL (mobile app will be put in place in the future for offline usage) after which they can start interacting with the system. The user can type in any relevant information and the bot will give a relevant response accordingly. The bot suggests possible remedies or recommendations that the user can make use of to assist them with their various conditions. After successful interaction, the bot suggests the nearest hospitals that offer mental health services that the patients can visit in order to seek further assistance. 
 
 ### Practical usage
 1. Visit https://lit-dusk-59445.herokuapp.com/
-2. Type "Hello"
-3. Reply the bot by typing "I have been thinking suicide for days"
-4. Then type "nearest hospital"
-5. Enter "Nigeria" as your location
-6. You will get the list of specialist 
+2. Reply the bot by typing "Hello"
+3. Further the instruction by typing  "one" or "two"
+4. Type "Thinking suicide"
+5. Then type "nearest hospital" to get connect to real specialist nearby
+6. Enter "Nigeria" as your location
+7. You will get a list of specialist 
 
 ## Setup
 You should have **Python 3.6 installed on your window machine with the following version of python packages.
