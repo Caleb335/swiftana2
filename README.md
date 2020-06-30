@@ -31,6 +31,7 @@ A user goes online and accesses the bot using a given URL (mobile app will be pu
 5. Then type "nearest hospital" to get connect to real specialist nearby
 6. Enter "Nigeria" as your location
 7. You will get a list of specialist 
+Note: The app is on a development server with limited resources, you may need to reload the page severally before getting access.
 
 ## Setup
 You should have **Python 3.6 installed on your window machine with the following version of python packages.
